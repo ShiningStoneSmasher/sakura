@@ -27,6 +27,11 @@
     text-decoration: none;
     font-size: 24px;
     font-family: 'Raleway';
+    &:hover{
+        cursor: pointer;
+        text-decoration: underline 1px;
+        background-color: #995e5e;
+    }
 }
 .navbar-tel-sec{
     display: $f;
@@ -36,6 +41,13 @@
     border: 2px solid $w;
     border-radius: 12px;
     padding: 12px;
+    >a{
+        font-size: 24px;
+        color: white;
+        font-family: 'Raleway';
+        font-size: 24px;
+        text-decoration: none;
+    }
 }
 .navbar-phone{
     height: 24px;
@@ -43,17 +55,9 @@
     margin-right: 8px;
 }
 .navbar-links:hover{
-    cursor: pointer;
-    text-decoration: underline 1px;
+
 }
 .navbar-tel-sec:hover{
     cursor: pointer;
     text-decoration: underline 1px;
-}
-.navbar-tel-sec a{
-    font-size: 24px;
-    color: white;
-    font-family: 'Raleway';
-    font-size: 24px;
-    text-decoration: none;
 }
