@@ -1,8 +1,10 @@
+@import './../../../styles.scss';
+
 .navbar{
-    display: flex;
+    display: $f;
     position: absolute;
     justify-content: space-between;
-    align-items: center;
+    align-items: $c;
     top: 0;
     height: 112px;
     width: 100%;
@@ -13,25 +15,25 @@
     margin-left: 128px;
 }
 .navbar-link-sec{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
+    display: $f;
+    align-items: $c;
+    justify-content: $c;
+    color: $w;
     margin-right: 128px;
 }
 .navbar-links{
     margin: 0 24px 0 24px;
-    color: white;
+    color: $w;
     text-decoration: none;
     font-size: 24px;
     font-family: 'Raleway';
 }
 .navbar-tel-sec{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: $f;
+    justify-content: $c;
+    align-items: $c;
     background-color: #9F0908;
-    border: 2px solid white;
+    border: 2px solid $w;
     border-radius: 12px;
     padding: 12px;
 }
