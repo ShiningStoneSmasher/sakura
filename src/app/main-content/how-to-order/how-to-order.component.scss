@@ -1,37 +1,40 @@
+$c: center;
+$f: flex;
+
 #how-to-order img{
     width: 128px;
     height: auto;
     margin: 0 0 16px 0;
 }
 #how-to-order{
-    display: flex;
+    display: $f;
     flex-direction: column;
-    align-items: center;
+    align-items: $c;
     font-family: 'raleway';
     margin: 120px 0 120px 0;
 }
 h2{
-    display: flex;
-    justify-content: center;
+    display: $f;
+    justify-content: $c;
     font-size: 80px;
     color: #9F0908;
     margin: 0 0 64px 0;
 }
 .how-to-order{
-    display: flex;
+    display: $f;
     justify-content: space-around;
     width: 1080px;
 }
 .how-to-order-detail{
-    display: flex;
+    display: $f;
     flex-direction: column;
-    align-items: center;
+    align-items: $c;
 }
 .how-to-order-detail span{
-    display: flex;
+    display: $f;
     font-family: 'economica';
     font-weight: bold;
-    text-align: center;
+    text-align: $c;
     font-size: 56px;
 
 }
