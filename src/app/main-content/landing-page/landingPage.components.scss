@@ -1,0 +1,26 @@
+h1{
+    color: white;
+    font-size: 96px;
+    font-weight: bold;
+}
+h2{
+    color: white;    
+    font-size: 24px;
+    font-weight: normal;
+}
+.navbar{
+    width: 100%;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-image: url('./../../../assets/img/1_hero/JPG/hero_bg.jpg');
+}

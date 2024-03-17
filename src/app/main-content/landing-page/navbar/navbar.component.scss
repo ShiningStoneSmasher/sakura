@@ -1,0 +1,57 @@
+.navbar{
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    height: 112px;
+    width: 100%;
+}
+.navbar-flower{
+    height: 64px;
+    width: 64px;
+    margin-left: 128px;
+}
+.navbar-link-sec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-right: 128px;
+}
+.navbar-links{
+    margin: 0 24px 0 24px;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: 'Raleway';
+}
+.navbar-tel-sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9F0908;
+    border: 2px solid white;
+    border-radius: 12px;
+    padding: 12px;
+}
+.navbar-phone{
+    height: 24px;
+    width: 24px;
+    margin-right: 8px;
+}
+.navbar-links:hover{
+    cursor: pointer;
+    text-decoration: underline 1px;
+}
+.navbar-tel-sec:hover{
+    cursor: pointer;
+    text-decoration: underline 1px;
+}
+.navbar-tel-sec a{
+    font-size: 24px;
+    color: white;
+    font-family: 'Raleway';
+    font-size: 24px;
+    text-decoration: none;
+}

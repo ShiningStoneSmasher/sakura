@@ -1,0 +1,25 @@
+$f: flex;
+
+#footer-main{
+    display: $f;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0A141E;
+    height: 144px;
+}
+#footer-left{
+    display: $f;
+    height: 44px;
+    max-width: 310px;
+    margin-left: 160px;
+    margin-right: -160px;
+}
+#footer-right{
+    display: $f;
+    margin-right: 160px;
+}
+#footer-right img{
+    height: 40px;
+    width: 40px;
+    padding: 8px;
+}
