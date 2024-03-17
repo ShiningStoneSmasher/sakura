@@ -8,25 +8,27 @@
     font-size: $px;
     font-family: $ff;
 }
-
-.navbar{
+@mixin posItems($sb){
     display: $f;
-    position: absolute;
-    justify-content: space-between;
+    justify-content: $sb;
     align-items: $c;
+}
+@mixin size($height, $width){
+    height: $height;
+    width: $width;
+}
+.navbar{
+    @include posItems(space-between);
+    position: absolute;
     top: 0;
-    height: 112px;
-    width: 100%;
+    @include size(112px, 100%);
 }
 .navbar-flower{
-    height: 64px;
-    width: 64px;
+    @include size(64px, 64px);
     margin-left: 128px;
 }
 .navbar-link-sec{
-    display: $f;
-    align-items: $c;
-    justify-content: $c;
+    @include posItems($c);
     color: $w;
     margin-right: 128px;
 }
@@ -40,9 +42,7 @@
     }
 }
 .navbar-tel-sec{
-    display: $f;
-    justify-content: $c;
-    align-items: $c;
+    @include posItems($c);
     background-color: #9F0908;
     @include borderStyle(solid);
     padding: 12px;
@@ -51,13 +51,11 @@
         text-decoration: underline 1px;
     }
     >a{
-        font-size: 24px;
-        color: white;
+        color: $w;
         @include fontStyle(none, 24px, 'Raleway');
     }
 }
 .navbar-phone{
-    height: 24px;
-    width: 24px;
+    @include size(24px, 24px);
     margin-right: 8px;
 }
