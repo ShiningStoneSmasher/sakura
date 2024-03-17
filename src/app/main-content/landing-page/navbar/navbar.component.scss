@@ -1,4 +1,13 @@
 @import './../../../../styles.scss';
+@mixin borderStyle($bStyle){
+    border: 2px $bStyle $w;
+    border-radius: 12px;
+}
+@mixin fontStyle($td, $px, $ff){
+    text-decoration: $td;
+    font-size: $px;
+    font-family: $ff;
+}
 
 .navbar{
     display: $f;
@@ -24,13 +33,10 @@
 .navbar-links{
     margin: 0 24px 0 24px;
     color: $w;
-    text-decoration: none;
-    font-size: 24px;
-    font-family: 'Raleway';
+    @include fontStyle(none, 24px, 'Raleway');
     &:hover{
         cursor: pointer;
-        text-decoration: underline 1px;
-        background-color: #995e5e;
+        text-decoration: underline 1px;        
     }
 }
 .navbar-tel-sec{
@@ -38,9 +44,12 @@
     justify-content: $c;
     align-items: $c;
     background-color: #9F0908;
-    border: 2px solid $w;
-    border-radius: 12px;
+    @include borderStyle(solid);
     padding: 12px;
+    &:hover{
+        cursor: pointer;
+        text-decoration: underline 1px;
+    }
     >a{
         font-size: 24px;
         color: white;
@@ -53,11 +62,4 @@
     height: 24px;
     width: 24px;
     margin-right: 8px;
-}
-.navbar-links:hover{
-
-}
-.navbar-tel-sec:hover{
-    cursor: pointer;
-    text-decoration: underline 1px;
 }
