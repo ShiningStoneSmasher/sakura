@@ -1,10 +1,5 @@
 @import './../../../styles.scss';
 
-#how-to-order img{
-    width: 128px;
-    height: auto;
-    margin: 0 0 16px 0;
-}
 #how-to-order{
     display: $f;
     flex-direction: column;
@@ -28,12 +23,16 @@ h2{
     display: $f;
     flex-direction: column;
     align-items: $c;
-}
-.how-to-order-detail span{
-    display: $f;
-    font-family: 'economica';
-    font-weight: bold;
-    text-align: $c;
-    font-size: 56px;
-
+    >span{
+        display: $f;
+        font-family: 'economica';
+        font-weight: bold;
+        text-align: $c;
+        font-size: 56px;
+    }
+    >img{
+        width: 128px;
+        height: auto;
+        margin: 0 0 16px 0;
+    }
 }

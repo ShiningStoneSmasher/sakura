@@ -1,4 +1,5 @@
 @import './../../../../styles.scss';
+
 @mixin borderStyle($bStyle){
     border: 2px $bStyle $w;
     border-radius: 12px;
@@ -17,11 +18,16 @@
     height: $height;
     width: $width;
 }
+@mixin hovers($cur, $dec, $px){
+    cursor: $cur;
+    text-decoration: $dec $px;
+}
+
 .navbar{
     @include posItems(space-between);
+    @include size(112px, 100%);
     position: absolute;
     top: 0;
-    @include size(112px, 100%);
 }
 .navbar-flower{
     @include size(64px, 64px);
@@ -33,26 +39,24 @@
     margin-right: 128px;
 }
 .navbar-links{
+    @include fontStyle(none, 24px, 'Raleway');
     margin: 0 24px 0 24px;
     color: $w;
-    @include fontStyle(none, 24px, 'Raleway');
     &:hover{
-        cursor: pointer;
-        text-decoration: underline 1px;        
+        @include hovers(pointer, underline, 1px); 
     }
 }
 .navbar-tel-sec{
     @include posItems($c);
-    background-color: #9F0908;
     @include borderStyle(solid);
+    background-color: #9F0908;
     padding: 12px;
     &:hover{
-        cursor: pointer;
-        text-decoration: underline 1px;
+        @include hovers(pointer, underline, 1px);
     }
     >a{
-        color: $w;
         @include fontStyle(none, 24px, 'Raleway');
+        color: $w;
     }
 }
 .navbar-phone{
